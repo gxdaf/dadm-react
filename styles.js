@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { ScreenStackHeaderRightView } from 'react-native-screens';
 
 const styles = StyleSheet.create({
     container: {
@@ -13,8 +14,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#800000',
         borderRadius: 15,
         margin: 10,
+        justifyContent: 'center',
         width: '90%',
-        height: 150,
+        height: 50,
     },
     titulo: {
         fontFamily: 'sans-serif',
@@ -22,11 +24,21 @@ const styles = StyleSheet.create({
         fontSize: 30
     },
     header:{
-        marginTop: 50,
+        marginTop: 10,
         marginHorizontal: 25,
     },
     body:{
         margin:25,
+    },
+    sobre:{
+        width: 30,
+        height: 30,
+        borderRadius: 30,
+        marginTop: 30,
+        marginRight: 20,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignSelf: 'flex-end'
     }
 })
 
